@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Tablas y Anclajes.css">
+</head>
+<body>
+    <h1>Tablas</h1> <!--Las tablas son un conjunto estructurado de datos compuesto por filas y columnas.-->
+
+    <caption> Tabla de nombres</caption> <!--representa un título descriptivo en una tabla.-->
+
+    <table> <!--crea el elemento de tabla.-->
+        <tr> <!--representa una fila.-->
+            <th>Nombre</th> <!--representa las celdas de encabezado.-->
+            <th>Apellido</th> 
+        </tr> 
+        <tr> 
+             <td>Pedro</td> <!--representa las celdas de datos.-->
+             <td>Infante</td> 
+        </tr> 
+        <tr> 
+             <td>Sara</td>
+             <td>Garcia</td> 
+        </tr> 
+    </table>
+
+<br>  
+<table>
+    <p>Tabla simple con encabezado</p><!--Representa un parrafo de descrpcion-->
+    <thead><!--esta etiqueta agrupa los elementos de la cabecera en la tabla.-->
+        <tr>
+            <th colspan="2">Encabezado de tablas</th><!--permite expandir las celdas de datos o de encabezados al número de columnas que deseemos que ocupe-->
+        </tr>
+    </thead>
+    <tbody><!--esta etiqueta agrupa los elementos de contenido en la tabla.-->
+        <tr>
+            <td>El cuerpo de la tabla</td>
+            <td>con 2 columnas</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<caption>Tabla de nombres</caption> <!--representa un título descriptivo en una tabla.-->
+
+<p>Tabla con thead, tfoot, y tbody</p>
+<table>
+  <thead>
+    <tr>
+      <th>Header content 1</th>
+      <th>Header content 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Body content 1</td>
+      <td>Body content 2</td>
+    </tr>
+  </tbody>
+  <tfoot><!--esta etiqueta agrupa los elementos de pie en la tabla.-->
+    <tr>
+      <td>Footer content 1</td>
+      <td>Footer content 2</td>
+    </tr>
+  </tfoot>
+</table>
+
+<p>Table with colgroup</p>
+<table>
+  <colgroup span="4"></colgroup> <!--Para aplicar una propiedad a más de una columna no es necesario repetir la propiedad en cada elemento <col>. Lo más sencillo es aplicarle el atributo span al primer elemento <col>. Este atributo funciona igual que rowspan y colspan, es decir, nos permite expandir la influencia de <col> al número de columnas que queramos.-->
+  <tr>
+    <th>Countries</th>
+    <th>Capitals</th>
+    <th>Population</th>
+    <th>Language</th>
+  </tr>
+  <tr>
+    <td>USA</td>
+    <td>Washington, D.C.</td>
+    <td>309 million</td>
+    <td>English</td>
+  </tr>
+  <tr>
+    <td>Sweden</td>
+    <td>Stockholm</td>
+    <td>9 million</td>
+    <td>Swedish</td>
+  </tr>
+</table>
+<p>Table with colgroup and col</p>
+<table>
+  <colgroup><!--El elemento <col> se especifica dentro de un bloque <colgroup>, justo debajo de la apertura <table>.-->
+    <col style="background-color: #0f0" /> <!--Este elemento nos permite especificar propiedades de estilo para toda una columna. Sin este elemento tendríamos que especificar el estilo en cada celda <th> o <td> de la columna que queramos estilizar. -->
+    <col span="2" />
+  </colgroup>
+  <tr>
+    <th>Lima</th>
+    <th>Limon</th>
+    <th>Naranja</th>
+  </tr>
+  <tr>
+    <td>Green</td>
+    <td>Yellow</td>
+    <td>Orange</td>
+  </tr>
+</table>
+
+<p>Cuadro sencillo con leyenda(caption)</p>
+<table>
+  <caption>
+    Subtítulo impresionante
+  </caption>
+  <tr>
+    <td>Dato Impresionante</td>
+  </tr>
+</table>
+
+<table>
+    <colgroup>
+        <col style="background-color: rgb(0, 119, 255);"/>
+        <col style="background-color: orange;"/>
+        <col style="background-color: rgb(230, 69, 69);"/>
+        <col style="background-color: rgb(182, 91, 31);"/>
+        <col style="background-color: yellow;"/>
+        <col style="background-color: rgb(29, 197, 147);"/>
+
+    </colgroup>
+    <tr style="background-color: rgb(111, 0, 255);">
+        <th>Tipo de articulo</th>
+        <th>Frutas</th>
+        <th>Verduras</th>
+        <th>Lacteos</th>
+        <th>Carnes</th>
+        <th>Comida para michis</th>
+    </tr>
+    <tr>
+        <td>Articulo</td>
+        <td>Manzana</td>
+        <td>Jitomate</td>
+        <td>Queso Manchego</td>
+        <td>Bisteck</td>
+        <td>Whiskas</td>
+    </tr>
+    <tr>
+        <td>Articulo</td>
+        <td>Pera</td>
+        <td>Lechuga</td>
+        <td>Leche</td>
+        <td>Sirloin</td>
+        <td>Royal Canin</td>
+    </tr>
+    <tr>
+        <td>Articulo</td>
+        <td>Sandía</td>
+        <td>Zanahoria</td>
+        <td>Queso Crema</td>
+        <td>Rib Eye</td>
+        <td>Purina</td>
+    </tr>
+    <tr>
+        <td>Articulo</td>
+        <td>Piña</td>
+        <td>Apio</td>
+        <td>Leche condensada</td>
+        <td>Angus</td>
+        <td>Minino</td>
+    </tr>
+    <tr>
+        <td>Articulo</td>
+        <td>Mango</td>
+        <td>Cebolla</td>
+        <td>Queso Oaxaca</td>
+        <td>Arrachera</td>
+        <td>Cat Chow</td>
+    </tr>
+    <tr>
+        <td>Total</td>
+        <td>$30</td>
+        <td>$60</td>
+        <td>$90</td>
+        <td>$180</td>
+        <td>$90</td>
+    </tr>
+    <tr>
+        <td>Gran Total</td>
+        <td>$450</td>
+    </tr>
+
+</table>
+
+<!--Agregar una identificación con un nombre de anclaje-->
+<a id="nombre-anclaje"> Aquí el nombre de la sección a la que quieres brincar </a>
+<!--Un anclaje en una cabecera-->
+<h2 id="nombre-anclaje">Nombre de la sección</h2>
+<!--Anclaje en una imagen, podemos ocupar cualquier imagen, en este caso se necesita el archivo al que esta linkeado-->
+<img id="nombre-anclaje" src="./Assets/July_Owen.jpg"/>
+<!--anclaje en un párrafo-->
+<p id="nombre-anclaje">Nombre del párrafo</p>
+<!--Crear un hipervínculo utilizando el identificador del objetivo del vínculo, precedido por #-->
+<a href="#nombre-anclaje">Brincar a la parte de la página con “nombre-anclaje” id </a>
+
+<h1>Receta de Solomillo Wellington</h1>
+<a href="#Solomillo Wellington">Solomillo Wellington</a><br>
+<a href="#ingredientes">Ingredientes</a><br>
+<a href="#elaboracion">Elaboracion</a><br>
+<a href="#contenido extra">Contenido Extra</a><br>
+<a name="Solomillo Wellington"></a>
+<h2>Solomillo Wellington</h2>
+<p>
+    El solomillo Wellington es uno de los platos estrella de la Navidad. En esta receta el cocinero Karlos Arguiñano explica paso a paso cómo hacer solomillo Wellington.
+
+    Este plato de origen inglés, también conocido como Beef Wellington o Boeuf Wellington (en francés), se elabora untando la carne con paté y duxelle de champiñones y envolviéndola en jamón y hojaldre. Después se hornea hasta que el hojaldre quede dorado y el solomillo en su punto. El resultado es un plato con una presentación perfecta que combina el crujiente del hojaldre con la textura tierna de la carne.
+    
+    La carne utilizada en esta ocasión ha sido solomillo de ternera, pero también se puede preparar solomillo Wellington de cerdo o una de las numerosas variantes con pescado, como el Salmón Wellington. Y que no se nos olvide esta receta de solomillo de cerdo Wellington, con el paso a paso de Karlos Arguiñano. </p>
+
+<a name="ingredientes"></a>
+<h2>Lista de ingredientes para la preparacion de la carne</h2>
+<table>
+    <tr> 
+        <th>Ingrediente</th> 
+        <th>Cantidad</th> 
+    </tr> 
+    <tr> 
+         <td>Solomillo de ternera</td> 
+         <td>1kg</td> 
+    </tr> 
+    <tr> 
+         <td>Chalot</td>
+         <td>1Pza</td> 
+    </tr> 
+    <tr> 
+        <td>Jamon serrano</td> 
+        <td>100gr</td> 
+   </tr> 
+   <tr> 
+        <td>Hojaldre</td>
+        <td>500gr</td> 
+   </tr> <tr> 
+    <td>Champiñones</td> 
+    <td>200gr</td> 
+</tr> 
+<tr> 
+    <td>BrandY</td>
+    <td>40ml</td> 
+</tr> 
+</table>
+<a name="elaboracion"></a>
+<h2>Elaboración de la receta de solomillo Wellington paso a paso</h2>
+<p>
+    En primer lugar, para sellar el solomillo salpimienta y dóralo a fuego lento en una sartén con un chorrito de aceite. Cuando esté dorado, retíralo de la sartén y deja que se enfríe completamente.<br>Para preparar la duxelle de champiñones, pela y pica la chalota en daditos y ponla a rehogar en la sartén donde has dorado el solomillo con un poco más de aceite. Lava y pica los champiñones y agrégalos. Rehógalos un poco. Vierte el brandy y dale un hervor. Añade también la nata y cocina todo conjuntamente 5 minutos a fuego suave. Tritura la mezcla con la batidora eléctrica y reserva.
+
+    Coloca las lonchas de jamón en fila sobre un papel de horno, solapando ligeramente una sobre otra. Úntalas con la mostaza y extiende encima la duxelle de champiñones y chalota.<br>
+    Hornea el solomillo Wellington a 190ºC (con el horno precalentado) durante 30 minutos, hasta que el hojaldre esté dorado. Cuando esté hecho, sácalo del horno y deja reposar al menos 10 minutos antes de cortarlo.<br>
+</p>
+<a name="contenido extra"></a>
+<h2>Con qué acompañar el solomillo Wellington</h2> <p>Esta receta es un plato principal que se puede servir con una guarnición de patatas al horno o verduras al vapor. También te recomendamos preparar una salsa para solomillo Wellington, que le dará un toque fresco y personal.</p>
+    <br>
+    <h2>Información nutricional de la receta de solomillo Wellington</h2>
+ <p>El solomillo de ternera es una carne magra que aporta proteínas de calidad, hierro y vitaminas del grupo B. Esta carne está recomendada en especial para personas con anemia o que hayan pasado por una cirugía, para mejorar la recuperación de las heridas. Además, es una carne que se digiere sin dificultad, siempre que se cocine con poca grasa.
+
+    En este plato predominan los alimentos de origen animal, por lo que se recomienda acompañar con una ensalada o verduras para que el menú sea más equilibrado.</p>
+
+<h1>Receta pollo a la naranja</h1>
+<h2>Pollo a la Naranja</h2>
+<p>El pollo a la naranja es un plato china originario de Hunan.1​ La variedad de pollo a la naranja más frecuente en los restaurantes de comida rápida chino-estadounidenses consiste en trozos de pollo rebozados y fritos cubiertos con salsa agripicante con sabor a naranja, que se espesa o carameliza. Aunque el plato es muy popular en los Estados Unidos, se trata más de una variante del pollo General Tso que del auténtico plato chino.</p>
+<br>
+<h2>¿Que ingredientes se necesitan para preparar un pollo a la naranja?</h2>
+<table>
+  <colgroup>
+    <col style="background-color: rgb(255, 153, 0);"/>
+    <col style="background-color: rgb(85, 127, 245);"/>
+  </colgroup>
+  <tr>
+    <th>Cantidad</th>
+    <th>Ingrediente</th>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Pechugas de pollo</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Naranjas</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Cebollas</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Cucharadas salsa roja</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Dientes de ajo</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Chorro de Vinagre</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Cucharada de azucar</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Cucharadas de maizena</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Pizca de sal</td>
+  </tr>
+  <td>1</td>
+    <td>Pizca de pimienta</td>
+  </tr>
+  <td>1</td>
+    <td>Chorro de aceite de oliva</td>
+  </tr>
+  <td>1</td>
+    <td>Perejil fresco</td>
+  </tr>
+</table>
+
+<h2>Pasos a seguir para elaborar el platillo</h2>
+1. Preparamos la salsa. Para ello, exprimimos las naranjas en un bol. Añadimos la salsa de soja, los dientes de ajo picados, el chorrito de vinagre, el azúcar, la maizena, que espesará la salsa en la cocción y un poco de sal y de pimienta negra recién molida. Puedes añadir aquí el pollo y dejarlo macerar durante una hora o, puedes pasar directamente al siguiente paso.
+<br>
+<br>
+2. En una sartén a fuego medio, añadimos un chorrito de aceite. Cuando esté caliente añadimos la cebolla picada muy finamente. Salpimentamos y dejamos cocinar 5 minutos, mientras removemos de vez en cuando con una cuchara de palo.
+<br>
+<br>
+3. Seguimos con la receta del pollo a la naranja. Pasado el tiempo, subimos la potencia del fuego y añadimos las pechugas de pollo, que ya están previamente cortadas en tamaño de bocado y salpimentadas. Mezclamos con la cebolla y sellamos los taquitos durante un par de minutos.
+<br>
+<br>
+4. Hecho esto, añadimos la salsa que habíamos preparado al principio. Bajamos la potencia del fuego y vamos cocinando a fuego suave, mientras mezclamos con la cuchara. La salsa irá reduciéndose un poco mientras también se va espesando por efecto de la maizena. Finalmente, puedes espolvorear con perejil fresco.
+<br>
+<br>
+<h2>Algunos ingredientes con los que puedes acompañar tu pollo a la naranja</h2>
+
+
+
+
+</body>
+</html>
