@@ -17,6 +17,8 @@ function programa1(){
     alert ('Trabajas ' + costeHoras + ' horas, te pagan ' + horasTrabajadas+ ' por hora, tu sueldo total es entonces: $' + (sueldo));
 }
 
+
+
 function programa2(){
     let solucion = (3+2)/(2*5);
     alert ('Resultado de (3+2)/(2*5) es: '+ (solucion));
