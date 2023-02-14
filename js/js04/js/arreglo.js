@@ -1,4 +1,14 @@
 let lista = [12, 5, 80, 34, 7];
+
+lista.sort(
+    function(valor1, valor2){
+        return valor1 + valor2;
+
+    }
+)
+
+console.log(lista)
+
 let listaNueva = lista.slice(1,3);
 console.log(listaNueva)
 
