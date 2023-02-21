@@ -1,0 +1,68 @@
+<!--/*
+
+Manipulación del DOM.
+
+Que encontramos en el arbol del DOM?
+
+ - Node: Es la unidad mas basica dentro del documento. Puede ser una etiqueta, un texto dentro de una etiqueta o un comentario, etc. 
+
+    <title> NODO
+        Manipualacion DOM //Es un nodo, pero es hijo del title
+    </title>
+
+
+ - Document: Tambien es un nodo, del tipo documento, es el nodo raiz a partir del cual se desarrollan o generan todos los demas nodos.
+
+ - Element: son todos aquellos definidos por etiquetas <div>, <img>, <h1>, <p>
+
+ - Attributes: Nodos que dan informacion asociada al tipo de elemento
+
+ - Comentario: Comentarios y otros elementos que estan dentro del HTML, son considerados nodos.
+
+
+Como leer nodos de mi DOM
+
+Metodos tradicionales (que se usan en versiones antiguas de JS)
+
+    -document.getElementById
+    -document.getElementByTagName
+    -document.getElementByClassName
+
+*/-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora del DOM</title>
+</head>
+
+<body>
+    <h1>Calculadora DOM.</h1>
+
+
+    <!--Aqui creo los inputs para los valores que se usaran en la calculadora-->
+    <input type="number" id="input1" placeholder="Ingresa tu primer número">
+    <input type="number" id="input2" placeholder="Ingresa tu segundo número">
+    <br>
+    <br>
+
+    <!--Aqui creo botones para las operaciones de la calculadora-->
+     <!-- Buena practica es crear los elementos fuera del HTML, ya que en caso de perder el archivo HTML, los eventos y elementos seguiran existiendo en el JS. -->
+
+    <button id="botonSuma">Suma</button>
+
+    <button id="botonResta">Resta</button>
+    <button id="botonMultiplicación">Multilicación</button>
+    <button id="botonDivisión">División</button>
+    <br>
+    <br>
+
+    <p id="resultado">Aquí va el resultado.</p>
+
+    <script src="./js/js-06.js"></script>
+</body>
+
+</html>
