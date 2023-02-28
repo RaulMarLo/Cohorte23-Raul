@@ -1,0 +1,62 @@
+package control;
+
+import java.util.Scanner;import javax.sql.rowset.CachedRowSet;
+
+public class EstructuraMultiple {
+	Scanner entrada2 = new Scanner(System.in);
+	public void vocal() {
+		System.out.println("Introduzca una letra: ");
+		char letra = entrada2.next().charAt(0);
+		
+		switch (letra) {
+		case 'a'&'A':
+		case 'e'&'E':
+		case 'i'&'I':
+		case 'o'&'O':
+		case 'u'&'U':
+			System.out.println("La letra " + letra +" es vocal.");
+			break;
+		
+		case 'B'&'C'&'D'&'F'&'G'&'H'&'J'&'K'&'L'&'M'&'N'&'P'&'Q'&'R'&'S'&'T'&'V'&'W'&'X'&'Y'&'Z'&'b'&'c'&'d'&'f'&'g'&'h'&'j'&'k'&'l'&'m'&'n'&'p'&'q'&'r'&'s'&'t'&'v'&'w'&'x'&'y'&'z': System.out.println("La letra " + letra +" es consonante.");
+		break;
+
+		default: System.out.println(letra +" es diferente a una letra.");
+			break;
+		}
+		}
+	public void notas() {
+		System.out.println("Introduzca la calificación: ");
+		int calificación = entrada2.nextInt();
+		
+		switch (calificación) {
+		case 6:
+		case 7:
+		case 8:
+		case 9:
+		case 10:
+			System.out.println("La calificación " + calificación + " es aprobatoria.");
+			break;
+
+		case 5:
+		case 4:
+		case 3:
+		case 2:
+		case 1:
+			System.out.println("La calificaión " + calificación + " es reprobatoria.");
+			break;
+			
+		default: System.out.println(calificación + " es diferente a una calificación.");
+			break;
+		}
+	}
+	
+	public void ternario() {
+		System.out.println("Introduzca un valor numerico: ");
+		int valor = entrada2.nextInt();
+		System.out.println("Introduzca un segundo valor numerico: ");
+		int valor1 = entrada2.nextInt();
+		int menor = (valor <= valor1)? valor : valor1;
+		System.out.println("-->" + menor);
+;		
+	}
+}
