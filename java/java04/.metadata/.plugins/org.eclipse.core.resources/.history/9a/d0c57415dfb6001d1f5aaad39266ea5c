@@ -1,0 +1,23 @@
+
+public class ClaseDeJava04 {
+	public static void main(String[] args) {
+	
+	/*public static void main(String )
+
+	int edad = 18;
+	boolean tieneLicencia = true;
+	
+	if (edad >= 18 && tieneLicencia) {
+	    System.out.println("Puede conducir un coche");
+	} else {
+	    System.out.println("No puede conducir un coche");*/
+	
+	int Num1 = 8;
+	int Num2 = 2;
+	int Num3 = Num1%Num2;
+
+	System.out.println(Num1>0 & Num3 == 0);
+
+	
+	}
+}

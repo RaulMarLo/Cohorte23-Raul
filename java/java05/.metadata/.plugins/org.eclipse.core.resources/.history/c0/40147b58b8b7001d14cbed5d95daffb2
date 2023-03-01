@@ -1,0 +1,37 @@
+package control;
+
+import java.util.Scanner;import javax.sql.rowset.CachedRowSet;
+
+public class EstructuraMultiple {
+	Scanner entrada2 = new Scanner(System.in);
+	public void vocal() {
+		System.out.println("Introduzca una letra: ");
+		char letra = entrada2.next().charAt(0);
+		
+		switch (letra) {
+		case 'a'&'A':
+		case 'e'&'E':
+		case 'i'&'I':
+		case 'o'&'O':
+		case 'u'&'U':
+			System.out.println("La letra " + letra +" es vocal.");
+			break;
+
+		default: System.out.println("La letra " + letra +" es consonante.");
+			break;
+		}
+		}
+	public void notas() {
+		System.out.println("Introduzca la calificación: ");
+		int calificación = entrada2.nextInt();
+		
+		switch (calificación) {
+		case ((6)|(7)|(8)|(9)|(10)):
+			System.out.println("La calificación " + calificación + " es aprobatoria.");
+			break;
+
+		default: System.out.println("La calificaión " + calificación + " es reprobatoria.");
+			break;
+		}
+	}
+}

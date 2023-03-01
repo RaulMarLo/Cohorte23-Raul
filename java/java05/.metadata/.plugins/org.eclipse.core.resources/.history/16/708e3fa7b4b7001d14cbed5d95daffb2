@@ -1,0 +1,24 @@
+package control;
+
+import java.util.Scanner;
+
+public class EstructuraMultiple {
+	Scanner entrada2 = new Scanner(System.in);
+	public void vocal() {
+		System.out.println("Introduzca una letra: ");
+		char letra = entrada2.next().charAt(0);
+		
+		switch (letra) {
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u':
+			System.out.println("La letra " + letra +" es vocal.");
+			break;
+
+		default: System.out.println("La letra " + letra +" es consonante.");
+			break;
+		}
+		}
+}

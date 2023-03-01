@@ -1,0 +1,17 @@
+package clases;
+
+public class NuevoHola {
+	private String nombre; //Tipo de dato string que es una variable sin necesidad de declararlo que al mismo tiempo es una clase. En pocas paalabras es una variable y una clase ya que esta dentro de una clase.
+	//Usamos el metodo constructor
+
+	public NuevoHola(String nombre) {
+		super();
+		this.nombre = nombre;
+	}
+	
+	public void saludo() {
+		System.out.print("Hola desde java con sts de nuez" + 		this.nombre);
+	}
+	
+	
+}

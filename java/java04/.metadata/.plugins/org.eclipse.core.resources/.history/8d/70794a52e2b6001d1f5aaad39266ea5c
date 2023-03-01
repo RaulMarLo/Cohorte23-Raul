@@ -1,0 +1,48 @@
+
+public class ClaseDeJava04 {
+	public static void main(String[] args) {
+	
+	/*public static void main(String )
+
+	int edad = 18;
+	boolean tieneLicencia = true;
+	
+	if (edad >= 18 && tieneLicencia) {
+	    System.out.println("Puede conducir un coche");
+	} else {
+	    System.out.println("No puede conducir un coche");*/
+	
+	//Ejercicio1; Verificar si un número es par y positivo:
+		
+	int Num1 = 7;
+	int Num2 = 2;
+	int Num3 = Num1%Num2;
+
+	boolean ResultadoNumPositivoYPar = (Num1>0 && Num3 == 0);
+	
+	if (ResultadoNumPositivoYPar){
+		System.out.println(Num1 + " es positivo y par.");
+	}
+	
+	else {
+	
+	System.out.println(Num1 + " no es positivo o no es par.");
+	}
+	
+	//Ejercicio2; Verificar si un número está dentro de un rango específico
+	
+	double NumeroADefinir = 11;
+	double NumeroMinimo = 0;
+	double NumeroMaximo = 10;
+	
+	boolean ResultadoNumeroEntreRango = (NumeroMinimo<NumeroADefinir && NumeroMaximo>NumeroADefinir );
+	boolean ResultadoNumeroFueraRango = (NumeroMinimo>NumeroADefinir|| NumeroMaximo<NumeroADefinir);
+	
+	if (ResultadoNumeroEntreRango) {
+		System.out.println("El numero " + NumeroADefinir + " esta dentro del rango de " + NumeroMinimo + " y " + NumeroMaximo );}
+	
+	else {System.out.println("El numero " + NumeroADefinir + " esta fuera del rango de " + NumeroMinimo + " y " + NumeroMaximo );
+		
+	}
+	}
+}

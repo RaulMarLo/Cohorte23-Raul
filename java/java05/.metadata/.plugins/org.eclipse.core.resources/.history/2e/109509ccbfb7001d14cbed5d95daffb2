@@ -1,0 +1,30 @@
+package control;
+
+import java.util.Scanner;
+
+public class Orden3 {
+	Scanner entrada3 = new Scanner(System.in);
+	
+	public void OrdenarNumeros() {
+		System.out.println("Introduzco el primer número: ");
+		double num = entrada3.nextInt();
+		System.out.println("Introduzca un segundo número: ");
+		double num2 = entrada3.nextInt();
+		System.out.println("Introduzca un tercer número: ");
+		double num3 = entrada3.nextInt();
+		
+		  if(num>num2 && num>num3 && num2>num3) {
+	            System.out.println("El orden es" + num + " " + num2 + " " +num3);
+	        }else if(num>num2 && num>num3 && num2<num3) {
+	            System.out.println("El orden es"+ num + " "+ num3 + " "+num2);
+	        }else if(num2>num && num2>num3 && num>num3) {
+	            System.out.println("El orden es"+ num2 + " "+ num + " "+num3);
+	        }else if(num2>num && num2>num3 && num<num3) {
+	            System.out.println("El orden es"+ num2 + " "+ num3 + " "+num);
+	        }else if(num3>num && num3>num2 && num>num2) {
+	            System.out.println("El orden es"+ num3 + " "+ num + " "+num2);
+	        }else {
+	            System.out.println("El orden es"+ num3 + " "+ num2 + " "+num);
+		}
+	}
+}
