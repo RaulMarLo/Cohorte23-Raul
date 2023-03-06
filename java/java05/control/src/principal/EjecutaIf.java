@@ -9,7 +9,8 @@ public class EjecutaIf {
 		/*ei.controlIf();*/
 		/*ei.divisible();*/
 		/*ei.compara();*/
-		ei.menorMayorIgualA0();
+		//ei.menorMayorIgualA0();
+		ei.CheckNumber();
 	}
 
 }

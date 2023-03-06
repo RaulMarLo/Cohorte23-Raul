@@ -6,6 +6,8 @@ public class Orden3 {
 	Scanner entrada3 = new Scanner(System.in);
 	
 	public void OrdenarNumeros() {
+
+
 		System.out.println("Introduzco el primer número: ");
 		double num = entrada3.nextInt();
 		System.out.println("Introduzca un segundo número: ");
@@ -28,4 +30,5 @@ public class Orden3 {
 		}
 
 	}
-}
+
+	}

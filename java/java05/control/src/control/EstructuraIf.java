@@ -77,4 +77,25 @@ public class EstructuraIf {
 			System.out.println("El número " + Num5 + " es mayor a " + 0 + ".");}
 		}
 	}
+
+
+public static int CheckNumber (){
+    
+    Scanner UserInputNum = new Scanner(System.in);
+    
+     System.out.println("Introduce number: ");
+     int n1 = UserInputNum.nextInt();
+     
+     if (n1%2==0 || (n1%2 == 0 && (n1>=6 || n1 <= 20 ))){
+          System.out.print("Weird");
+          
+          return n1;}
+         
+         else if ((n1 >= 2 || n1 <= 5) || n1 > 20){ 
+         System.out.println("Not Weird");
+         
+         return n1;}
+     
+      return n1;
+}
 }
