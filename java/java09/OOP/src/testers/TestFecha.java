@@ -16,7 +16,7 @@ public class TestFecha {
 		
 		System.out.println(f.stringFecha());
 		System.out.println(f);
-		
+		System.out.println(toString(f.stringFecha()));
 		
 		
 	}
