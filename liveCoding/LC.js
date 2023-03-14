@@ -14,7 +14,6 @@ function CompararNumCaracteres (a, b){
 
 
         arrayVacio.push(a[i]);
-        
     }
     
 }
