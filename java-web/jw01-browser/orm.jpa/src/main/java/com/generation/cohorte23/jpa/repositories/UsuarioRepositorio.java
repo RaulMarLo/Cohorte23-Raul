@@ -10,10 +10,6 @@ import com.generation.cohorte23.jpa.model.UsuarioModel;
 @Repository
 public interface UsuarioRepositorio extends CrudRepository<UsuarioModel, Long> {
 
-	public static ArrayList<UsuarioModel> busquedaPorPrioridad(Integer prioridad) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
-	
+	public ArrayList<UsuarioModel> findByPrioridad(Integer prioridad);
+
 }
